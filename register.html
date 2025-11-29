@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EstateSight — Register</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header thin">
+    <div class="container nav">
+      <div class="brand">
+        <img src="images/logo.svg" alt="EstateSight logo" class="logo" />
+        <div class="brand-text">
+          <h1>EstateSight</h1>
+          <p class="tag">Smart. Simple. Accurate House Price Estimates.</p>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="login.html" class="nav-link">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container auth-hero">
+    <section class="auth-card card">
+      <h2>Create your account</h2>
+      <p class="muted">Sign up to save demo preferences locally. This is a frontend-only registration — for presentation purposes.</p>
+      <form id="registerForm" class="form">
+        <label>Full name<input id="regName" type="text" required></label>
+        <label>Email<input id="regEmail" type="email" required></label>
+        <label>Password<input id="regPassword" type="password" required></label>
+        <label>Confirm Password<input id="regPassword2" type="password" required></label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Create Account</button>
+          <a href="login.html" class="btn ghost">Back to Login</a>
+        </div>
+      </form>
+      <p class="muted small">Passwords are validated client-side. This demo stores a simple record in localStorage.</p>
+    </section>
+    <aside class="auth-visual">
+      <img src="images/house5.jpg" alt="Modern villa" />
+    </aside>
+  </main>
+
+  <script src="auth.js" defer></script>
+</body>
+</html>
